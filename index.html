@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Tracking</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/fastdeliverylogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/fasttrack.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>FastTrack</h2>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li class="home"><a href="#">Home</a></li>
+          <li class="about"><a href="#">About</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+          <li>
+            <a href="#" class="btn">Track Now</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <section class="hero">
+      <center class="hero-content">
+        <h2>Reliable & Fast Delivery Service</h2>
+        <p>Track your package anytime, anywhere.</p>
+        <a href="#" class="btn">Track Now</a>
+      </center>
+    </section>
+
+    <section style="text-align: center; padding: 5vw">
+      <div
+        style="
+          display: flex;
+          gap: 2vmin;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div style="color: #ff6600; font-size: 2.5rem">-</div>
+        <div style="color: #ff6600; font-size: 2.5rem">-</div>
+        <div style="color: #ff6600; font-size: 2.5rem">-</div>
+        <div style="color: #ff6600; font-size: 2.5rem">-</div>
+        <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+          padding: 0 5vw;
+        "
+      >
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px">
+          <span style="color: #ff6600">Entrust</span> Us with Your Logistics
+        </h2>
+        <p style="text-align: center; color: #989ea6">
+          Our FastTrack logistics platform is designed to help you deliver your
+          goods efficiently and securely.
+        </p>
+      </div>
+      <div class="boxcontainer">
+        <div class="box">
+          <div class="overlay">Track package status</div>
+          <span style="color: #ff6600;"> &bull;&bull;&bull;</span>
+        </div>
+        <div class="box">
+          <div class="overlay">Receive real-time updates</div>
+          <span style="color: #ff6600;"> &bull;&bull;&bull;</span>
+        </div>
+        <div class="box">
+          <div class="overlay">Easily manage multiple shipments</div>
+          <span style="color: #ff6600;"> &bull;&bull;&bull;</span>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <div
+      style="
+        display: flex;
+        gap: 2vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 0 10vw;
+      "
+    >
+      <h2 style="font-size: 2.5rem; margin-bottom: 10px">
+        <span style="color: #ff6600">Shipping</span> to & from Anywhere
+      </h2>
+      <p style="text-align: center; color: #989ea6">
+        Our FastTrack logistics platform is designed to help you deliver your
+        goods efficiently and securely.
+      </p>
+    </div>
+    <section class="images-container">
+      <img src="./assets/img/AirCargo.gif" alt="Air Cargo" />
+      <img src="./assets/img/cargoship.gif" alt="Cargo Ship" />
+    </section>
+
+    <section class="tracking">
+      <h2>Track Your Shipment</h2>
+      <form onsubmit="trackPackage(event)">
+        <input
+          type="text"
+          id="tracking-number"
+          placeholder="Enter Tracking Number"
+          required
+        />
+        <button type="submit">Track</button>
+      </form>
+      <div id="tracking-result" class="tracking-result"></div>
+    </section>
+
+    <div
+      style="
+        display: flex;
+        gap: 2vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+      <div style="color: #ff6600; font-size: 2.5rem">-</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 0 5vw;
+      "
+    >
+      <h2 style="font-size: 2.5rem; margin-bottom: 10px; text-align: center">
+        <span style="color: #ff6600">We're</span> waiting for you
+      </h2>
+      <p class="waiting-text" style="text-align: center; color: #989ea6">
+        From booking to communications, to payment: Fast Track helps you
+        transport freight faster, cheaper, safer, and easier, so you can stay
+        focused on your business.
+      </p>
+    </div>
+
+    <section class="working-hours-newletter">
+      <div class="working-hours">
+        <div
+          class="working-hours-content"
+          style="display: flex; flex-flow: column; row-gap: 0.8vmin"
+        >
+          <h2>Our Working Hours</h2>
+          <p>Monday - Friday: 9:00AM - 6:00PM</p>
+          <p>Saturday: 10:00AM - 4:00PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <h2 style="margin-bottom: 5px">Subscribe to Our Newsletter</h2>
+          <p style="margin-bottom: 5px">
+            Get the latest updates and delivery news.
+          </p>
+          <form onsubmit="subscribeNewsletter(event)">
+            <input
+              style="margin-bottom: 5px"
+              type="email"
+              id="newsletter-email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 FastTrack Delivery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./assets/js/fasttrack.js"></script>
+  </body>
+</html>
