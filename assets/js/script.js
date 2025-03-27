@@ -26,11 +26,22 @@ function trackPackage(event) {
 }
 
 function subscribeNewsletter(event) {
-  event.preventDefault(); m
+  event.preventDefault();
   let email = document.getElementById("newsletter-email").value.trim();
   if (email) {
     alert("Thank you for subscribing to our newsletter!");
   } else {
     alert("Please enter your email address");
+  }
+}
+function contact(event) {
+  event.preventDefault();
+  let email = document.getElementById("contact-email").value.trim();
+  let text = document.getElementById("contact-text").value.trim();
+  let message = document.getElementById("contact-message").value.trim();
+  if (email && text && message ) {
+    alert("Thank you for contacting us");
+  } else {
+    alert("Please fill in your details");
   }
 }
