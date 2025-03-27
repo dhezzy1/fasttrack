@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Track | FastTrack</title>
     <link rel="stylesheet" href="/assets/css/track.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="shortcut icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClDkOuzr1b82AZzrTI7L6dnIrealZdzbFKw&s"
@@ -44,6 +45,34 @@
       <h1>Track</h1>
       <span> <a href="/index.html">Home</a> / Track </span>
     </section>
+
+    <section class="tracking" style="margin: 60px 0;">
+      <h2>Track Your Shipment</h2>
+      <form onsubmit="trackPackage(event)">
+        <input
+          type="text"
+          id="tracking-number"
+          placeholder="Enter Tracking Number"
+          required
+        />
+        <button type="submit">Track</button>
+      </form>
+      <div id="tracking-result" class="tracking-result"></div>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourservices.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="#" class="btn active">Track Now</a>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy;2025 FastTrack Delivery. All Rights Reserved.</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
